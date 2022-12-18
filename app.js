@@ -19,6 +19,6 @@ const user = require("./routes/user");
 app.use("/api/v1", post);
 app.use("/api/v1", user);
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "./build")));
 
 module.exports = app;
